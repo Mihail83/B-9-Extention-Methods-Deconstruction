@@ -26,9 +26,14 @@ namespace Base_Lesson_9.Practice
         /// Получить и вывести на консоль текущее время.
         /// Использовать пустые параметры.
         /// </summary>
-        public static void L9_P_EX_2_from_2()
+        public static void Deconstruct(this DateTime time, out int sec, out int min, out int hour, out int day, out int month, out int year)
         {
-
+            sec = time.Second;
+             min = time.Minute;
+             hour = time.Hour;
+             day = time.Day;
+             month = time.Month;
+             year = time.Year;
         }
     }
 }
